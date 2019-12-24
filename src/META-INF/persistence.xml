@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="project?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ui.Servicebooking</class>
+    <class>ui.Servicestock</class>
+    <class>ui.Salesmessage</class>
+    <class>ui.Sales</class>
+    <class>ui.Servicem</class>
+    <class>ui.Message</class>
+    <class>ui.Salesbooking</class>
+    <class>ui.Service</class>
+    <class>ui.Cuitomer</class>
+    <class>ui.Salesstock</class>
+    <class>ui.Servicemessage</class>
+    <class>ui.Login</class>
+    <class>ui.Customer</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/project?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
